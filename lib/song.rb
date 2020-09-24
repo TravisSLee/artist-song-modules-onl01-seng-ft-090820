@@ -6,7 +6,7 @@ class Song
 
   @@songs = []
   
-   extend Memorable
+   
    
   def initialize
     @@songs << self
@@ -35,4 +35,6 @@ class Song
   def to_param
     name.downcase.gsub(' ', '-')
   end
+  
+  extend Memorable
 end
